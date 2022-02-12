@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'android-2',
+1 verbose cli   '--production',
+1 verbose cli   '--save' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData android-2
+8 silly fetchNamedPackageData android-2
+9 silly mapToRegistry name android-2
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'android-2',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'android-2',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/android-2
+14 verbose request uri https://registry.npmjs.org/android-2
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 15:24:05
+17 verbose request id 5ec638b69f831967
+18 http request GET https://registry.npmjs.org/android-2
+19 http 404 https://registry.npmjs.org/android-2
+20 verbose headers { date: 'Mon, 18 Jun 2018 10:21:11 GMT',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'content-length': '21',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'set-cookie': [ '__cfduid=d2136f1976370445e81a7880d14518d051529317270; expires=Tue, 18-Jun-19 10:21:10 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'cf-cache-status': 'MISS',
+20 verbose headers   'cf-ray': '42cd070f5cdd865b-ARN',
+20 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 verbose headers   vary: 'accept-encoding, accept',
+20 verbose headers   server: 'cloudflare' }
+21 silly get cb [ 404,
+21 silly get   { date: 'Mon, 18 Jun 2018 10:21:11 GMT',
+21 silly get     'content-type': 'application/json',
+21 silly get     'content-length': '21',
+21 silly get     connection: 'keep-alive',
+21 silly get     'set-cookie': [ '__cfduid=d2136f1976370445e81a7880d14518d051529317270; expires=Tue, 18-Jun-19 10:21:10 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'cf-cache-status': 'MISS',
+21 silly get     'cf-ray': '42cd070f5cdd865b-ARN',
+21 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 silly get     vary: 'accept-encoding, accept',
+21 silly get     server: 'cloudflare' } ]
+22 silly fetchPackageMetaData Error: Not found : android-2
+22 silly fetchPackageMetaData     at makeError (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+22 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+22 silly fetchPackageMetaData     at Request._callback (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+22 silly fetchPackageMetaData     at Request.self.callback (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+22 silly fetchPackageMetaData     at emitTwo (events.js:100:13)
+22 silly fetchPackageMetaData     at Request.emit (events.js:185:7)
+22 silly fetchPackageMetaData     at Request.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+22 silly fetchPackageMetaData     at emitOne (events.js:95:20)
+22 silly fetchPackageMetaData     at Request.emit (events.js:182:7)
+22 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+22 silly fetchPackageMetaData  error for android-2 { [Error: Not found : android-2] pkgid: 'android-2', statusCode: 404, code: 'E404' }
+23 silly rollbackFailedOptional Starting
+24 silly rollbackFailedOptional Finishing
+25 silly runTopLevelLifecycles Starting
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: Not found : android-2
+28 verbose stack     at makeError (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+28 verbose stack     at CachingRegistryClient.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+28 verbose stack     at Request._callback (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+28 verbose stack     at Request.self.callback (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+28 verbose stack     at emitTwo (events.js:100:13)
+28 verbose stack     at Request.emit (events.js:185:7)
+28 verbose stack     at Request.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+28 verbose stack     at emitOne (events.js:95:20)
+28 verbose stack     at Request.emit (events.js:182:7)
+28 verbose stack     at IncomingMessage.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+29 verbose statusCode 404
+30 verbose pkgid android-2
+31 verbose cwd D:\OpenServer\domains\alifba
+32 error Windows_NT 6.1.7601
+33 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "android-2" "--production" "--save"
+34 error node v5.10.1
+35 error npm  v3.8.3
+36 error code E404
+37 error 404 Not found : android-2
+38 error 404
+39 error 404 'android-2' is not in the npm registry.
+40 error 404 You should bug the author to publish it (or use the name yourself!)
+41 error 404 Note that you can also install from a
+42 error 404 tarball, folder, http url, or git url.
+43 verbose exit [ 1, true ]

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.deen812.bashalifba" version="1.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Әлифба</name>
+    <description>
+        Башҡортса әлифба.
+    </description>
+    <author email="deen812@mail.ru" href="http://cordova.io">
+        DiniStudio
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <icon density="mdpi" height="72" platform="android" src="res/icon2.png" width="72" />
+    <platform name="android">
+        <splash density="land-hdpi" src="res/splash-land-hdpi.png" />
+        <splash density="land-ldpi" src="res/splash1.png" />
+        <splash density="land-mdpi" src="res/splash-land-mdpi.png" />
+        <splash density="land-xhdpi" src="res/splash-land-xhdpi.png" />
+        <splash density="port-hdpi" src="res/splash-port-hdpi.png" />
+        <splash density="port-ldpi" src="res/splash1.png" />
+        <splash density="port-mdpi" src="res/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="res/splash-port-xhdpi.png" />
+    </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <engine name="android" spec="^6.2.3" />
+</widget>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+    <!-- 
+     com.deen812.letter2feature - платная версия
+     com.deen812.letter2feature  - бесплатная версия
+      cordova plugin add cordova-plugin-file
+    
+    https://www.iconfinder.com/icons/2135802/communication_network_tower_wifi_wifi_tower_icon#size=32
+    http://www.developerdrive.com/2015/01/8-simple-css-hover-effects/
+    https://webformyself.com/8-prostyx-css-effektov-pri-navedenii/
+            D:
+            cd D:\OpenServer\domains\alifba\
+            set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_77
+    cordova platform add android-2 3
+            cordova run android --release -- --keystore=D:\googledisk\31129deen812_all_key --storePassword=31129deen812 --alias=deen812 --password=31129deen812
+            
+     
+    
+            D:
+            cd D:\OpenServer\domains\alifba\
+            set JAVA_HOME=D:\Program Files\Java\jdk1.8.0_77
+            cordova run android --release -- --keystore=D:\googledisk\31129deen812_all_key --storePassword=31129deen812 --alias=deen812 --password=31129deen812
+            
+            
+            D:\OpenServer\domains\alifba\platforms\android\build\outputs\apk
+    
+    http://212.109.216.253/phpmyadmin/index.php?db=mybloknote&token=4faf426d525989e7db2fa9cdf2a9652a
+    -->
+
+    <head>
+        <title>Әлифба</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">          
+        <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+        <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bl.min.css" />
+
+        <script src="lib/jquery-1.9.1.min.js"></script>
+        <script src="css/jquery.mobile-1.4.5.min.js"></script>
+
+
+        <script src="lib/jquery-ui.min.js"></script>
+        <script src="lib/fastclick.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>   
+        <script src="js/data.js"></script>
+        <script src="js/class_DB.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/gui.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="js/bukvi.js"></script>
+        <script src="js/colors.js"></script>
+        <script src="js/app.js"></script>
+        <meta name="theme-color" content="#222"/>
+    </head>
+    <body>
+
+        <div data-role="page" id="main">
+             <div class="gui-top gui-fixed" style="right: 0;left:auto">
+                <a  onclick="ExitApp();">
+                    <img  class="" src="images/gui/exit-btn.png" >
+                </a>
+            </div>
+            <ul class="main-menu">
+                <li><a href="#bukvi" class="btn-click-rotate"   ><img  src="images/gui/btn-alifba.png" ></a></li>
+                <li> <a href="#colors" ><img class="btn-click-rotate" src="images/gui/btn-colors.png" ></a></li>
+                <li> <a xhref="#about" ><img class="btn-click-rotate" src="images/gui/btn-skazki.png" ></a></li>
+                <li> <a href="#about" ><img class="btn-click-rotate" src="images/gui/btn-info.png" ></a></li>
+
+            </ul>
+        </div>
+
+
+
+        <div data-role="page" id="bukvi">
+            <div class="gui-top gui-fixed">
+                <a href="#main">
+                    <img data-href="#main" class="btn-click-rotate" src="images/gui/home.png" >
+                </a>
+            </div>
+            <div class="btn-hover-gray gui-next gui-fixed btn-click-rotate" id="btn_next">
+                <img src="images/gui/right.png" onclick="btn_next()">
+            </div>
+            <div class="btn-hover-gray gui-prev gui-fixed btn-click-rotate"  id="btn_prev">
+                <img src="images/gui/left.png" onclick="btn_prev()">
+            </div>
+            <div id="content" data-role="content" style="overflow: hidden;height: 100%;" >
+            </div>
+
+
+
+            <div class="gui-bottom gui-fixed" style="display: none">
+                <img src="images/gui/bukvi.png" class="btn-hover-gray btn-click-rotate" onclick="Bukvi_show()">
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="colors">
+            <div class="gui-top gui-fixed">
+                <a href="#main">
+                    <img data-href="#main" class="btn-click-rotate" src="images/gui/home.png" >
+                </a>
+            </div>
+            <div class="color-overlay" onclick="colors.closeDetail()"></div>
+            <div id="content-color" class="content" data-role="content" style="overflow: hidden;height: 100%;" >
+            </div>
+        </div>
+
+        <div data-role="page" id="about"> 
+            <div class="gui-top gui-fixed">
+                <a href="#main">
+                    <img class="btn-click-rotate" src="images/gui/home.png" >
+                </a>
+            </div>
+            <div class="content panel-bg">
+                <center>
+                    <img  class="head-ribbon" src="images/gui/head-info.png" >
+                </center>
+
+                <div class="panel-b1">
+                    <div class="panel-b2">
+                        <div class="panel-b3">
+                            <center>
+                                <h2> Сәләм! </h2>
+                            </center>
+                            <p>Был ҡушымта(приложение) башҡорт балаларын уҙ теленә
+                                өйрәтер өсөн эшләнгән. Башҡорт теле бөтмәһен: 
+                                Иле юҡтың теле юҡ,теле юҡтың иле юҡ.</p>
+                            <p>
+                                Ҡушымта бөтөнләй буш.   
+                            </p>
+                            <p>
+                                Һорауҙар буйынса deen812@mail.ru -ға яҙығыҙ. 
+                                Зур рахмат  Гаспранова Минзийа га, аудио язма осон
+                            </p>
+
+                            <center>
+                                <img src="images/deen-logo-80.png"/>
+                            </center>
+
+                            <div style="display: none">
+
+
+                                <p>
+                                    Ярҙам иткегеҙ килһә <b>"ярзам итергә"</b> тигән төймәгә баҫығыҙ (браузерҙа яндекс түләү бите асыла саҡ)
+                                </p>
+                                <div class="capcha">
+                                    <p>Балаларҙан кәртә:</p>
+                                    <span id="a">3</span>
+                                    <span class="plus">+</span>
+                                    <span id="b">3</span>
+                                    <span class="plus">=</span>
+                                    <input type="text" data-role="none" id="c-value" placeholder="Яуап">
+                                </div>
+                                <button class="help-btn" data-role="none" onclick="help()">ярзам итергә</button>
+                            </div>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
